@@ -1,0 +1,59 @@
+:root {
+    /* Paleta de Colores Principal */
+    --primary-navy: #0d2952;
+    --primary-blue: #1565c0;
+    --primary-light-blue: #e3f2fd;
+    --accent-blue: #2196f3;
+    
+    /* Colores de Fondo y Superficie */
+    --bg-light: #f0f2f5;
+    --surface-white: #ffffff;
+    --sidebar-bg: var(--primary-navy);
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --border-color: #e0e6ed;
+
+    /* Colores de Estado */
+    --state-success: #4caf50;
+    --state-error: #f44336;
+    --state-warning: #ff9800;
+    --state-online: #00e676;
+
+    /* Tipografía */
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --text-dark: #1a202c;
+    --text-medium: #4a5568;
+    --text-light: #718096;
+    --text-on-navy: #ffffff;
+
+    /* Dimensiones */
+    --sidebar-width: 260px;
+    --header-height: 70px;
+    --border-radius-lg: 16px;
+    --border-radius-md: 10px;
+    --border-radius-sm: 6px;
+
+    /* Transiciones */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, button {
+    font-family: inherit;
+}

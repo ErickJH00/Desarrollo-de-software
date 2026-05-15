@@ -2,7 +2,7 @@
 
 Este proyecto es una implementación funcional de un sistema de gestión para laboratorios clínicos, basado en el prototipo diseñado en Figma.
 
-## 📂 Estructura del Proyecto (Árbol de Directorios)
+## Estructura del Proyecto 
 
 Esta estructura sigue el estándar para repositorios profesionales en GitHub:
 

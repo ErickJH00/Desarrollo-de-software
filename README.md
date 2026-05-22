@@ -57,14 +57,4 @@ El servicio estara activo en http://localhost:8080.
 ### 3. Despliegue del Frontend
 Se recomienda abrir el archivo index.html utilizando un servidor local (como Live Server) para evitar restricciones de politicas CORS al consumir la API local.
 
-## Equipo de Trabajo
 
-Proyecto desarrollado para la asignatura Base de Datos II - Ingenieria de Sistemas:
-
-* Michelle Valentina Quintero Marquez
-* Nick Andrey Piratoba Veloza
-* Johan Camilo Bonett Velasquez
-
-Universidad de Pamplona
-Facultad de Ingenierias y Arquitectura
-Villa del Rosario, 2026.

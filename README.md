@@ -52,7 +52,7 @@ ProyectoAnti/
 Desde la terminal en el directorio del backend, ejecute:
 ./mvnw spring-boot:run
 
-El servicio estara activo en http://localhost:8080.
+El servicio estara activo en http://localhost:8081.
 
 ### 3. Despliegue del Frontend
 Se recomienda abrir el archivo index.html utilizando un servidor local (como Live Server) para evitar restricciones de politicas CORS al consumir la API local.

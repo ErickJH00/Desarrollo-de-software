@@ -13,6 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    //----------------
+    // Ejemplo para obtener pacientes
+    fetch('http://localhost:8081/api/pacientes')
+        .then(response => response.json())
+        .then(data => console.log('Pacientes:', data))
+        .catch(error => console.error('Error:', error));
+    
+    // Ejemplo para hacer login
+    fetch('http://localhost:8081/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ usuario: 'marisolquintero', password: 'danielita123' })
+    })
+        .then(response => response.json())
+        .then(data => console.log('Login:', data))
+        .catch(error => console.error('Error:', error));
+    //----------------
+
     // Efecto de scroll sutil en el main content
     const mainContent = document.querySelector('.main-content');
     if (mainContent) {

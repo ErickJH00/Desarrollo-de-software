@@ -119,15 +119,26 @@
             passInput.type = passInput.type === 'password' ? 'text' : 'password';
         }
 
-        document.getElementById('loginForm').onsubmit = function(e) {
+        document.getElementById('loginForm').onsubmit = async function(e) {
             e.preventDefault();
             const user = document.getElementById('username').value;
             const pass = document.getElementById('password').value;
 
-            if (user === 'licenciada' && pass === 'danimar2026') {
-                window.location.href = 'dashboard.html';
-            } else {
-                alert('Credenciales incorrectas. Intenta con licenciada / danimar2026');
+            try {
+                const response = await fetch('http://localhost:8081/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ usuario: user, password: pass })
+                });
+
+                if (response.ok) {
+                    window.location.href = 'dashboard.html';
+                } else {
+                    alert('Credenciales incorrectas. Intenta con marisolquintero / danielita123');
+                }
+            } catch (error) {
+                console.error('Error de conexión:', error);
+                alert('Error al conectar con el servidor backend');
             }
         };
     </script>

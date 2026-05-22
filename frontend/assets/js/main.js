@@ -26,3 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+//Para subir los cambios a GitHub
+//git add .
+//git commit -m "texto de lo que se modifico"
+//git push

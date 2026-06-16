@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva orden · Laboratorio Danimar</title>
+  <link rel="stylesheet" href="../assets/catalogo.css">
+  <style>
+    .form-orden{max-width:1000px;margin:20px auto;padding:0 20px;}
+    .campo{margin-bottom:16px;}
+    .campo label{display:block;font-weight:600;color:var(--azul);margin-bottom:6px;}
+    .campo select,.campo textarea{width:100%;padding:10px;border:1px solid var(--linea);border-radius:8px;font-size:15px;}
+    .grupo-exam{border:1px solid var(--linea);border-radius:8px;margin-bottom:10px;overflow:hidden;}
+    .grupo-exam h3{margin:0;background:#eef4fb;color:var(--azul);padding:8px 12px;font-size:14px;}
+    .opcion{display:flex;align-items:center;gap:8px;padding:6px 12px;border-top:1px solid #f0f4f8;}
+    .opcion small{margin-left:auto;color:var(--gris);}
+    .barra{display:flex;justify-content:space-between;align-items:center;margin:18px 0;}
+    .btn{background:var(--azul);color:#fff;border:none;padding:11px 20px;border-radius:8px;font-size:15px;cursor:pointer;}
+    .btn:hover{background:#16395c;}
+    .total{font-weight:700;color:var(--azul);font-size:16px;}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">🧪 Laboratorio Clínico <strong>Danimar</strong></div>
+    <span class="subtitulo">Nueva orden</span>
+  </header>
+
+  <div class="form-orden">
+    <div class="campo">
+      <label for="paciente">Paciente</label>
+      <select id="paciente"></select>
+    </div>
+
+    <div class="campo">
+      <label>Exámenes solicitados</label>
+      <div id="examenes"></div>
+    </div>
+
+    <div class="campo">
+      <label for="observaciones">Observaciones</label>
+      <textarea id="observaciones" rows="2" placeholder="Opcional"></textarea>
+    </div>
+
+    <div class="barra">
+      <span class="total">Total estimado: <span id="total">0,00</span></span>
+      <button class="btn" id="btn-crear">Crear orden y cargar resultados</button>
+    </div>
+  </div>
+
+  <script src="../assets/nueva-orden.js"></script>
+</body>
+</html>

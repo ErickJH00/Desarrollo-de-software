@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=pages/login.html">
-    <title>Laboratorio Clínico DANIMAR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio Clínico Danimar</title>
+  <link rel="stylesheet" href="assets/catalogo.css">
+  <style>
+    .hero{max-width:900px;margin:60px auto;text-align:center;padding:0 20px;}
+    .hero h1{color:var(--azul);font-size:34px;margin:0 0 6px;}
+    .hero p{color:var(--gris);font-size:17px;margin:0 0 36px;}
+    .accesos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+    .acceso{display:block;text-decoration:none;background:#fff;border:1px solid var(--linea);
+      border-radius:12px;padding:24px;box-shadow:0 2px 6px rgba(0,0,0,.05);transition:.15s;}
+    .acceso:hover{transform:translateY(-3px);border-color:var(--azul2);}
+    .acceso .ico{font-size:30px;}
+    .acceso h2{color:var(--azul);font-size:17px;margin:10px 0 4px;}
+    .acceso span{color:var(--gris);font-size:13px;}
+  </style>
 </head>
 <body>
-    <p>Redirigiendo al sistema...</p>
+  <header class="topbar">
+    <div class="logo">🧪 Laboratorio Clínico <strong>Danimar</strong></div>
+  </header>
+
+  <main class="hero">
+    <h1>Sistema Web Danimar</h1>
+    <p>Gestión de exámenes, órdenes y reportes del laboratorio clínico.</p>
+    <div class="accesos">
+      <a class="acceso" href="pages/catalogo.html">
+        <div class="ico">📋</div><h2>Catálogo</h2><span>Exámenes y parámetros</span>
+      </a>
+      <a class="acceso" href="pages/nueva-orden.html">
+        <div class="ico">➕</div><h2>Nueva orden</h2><span>Crear una orden de análisis</span>
+      </a>
+      <a class="acceso" href="pages/reporte.html">
+        <div class="ico">🧾</div><h2>Reporte</h2><span>Ver e imprimir resultados</span>
+      </a>
+    </div>
+  </main>
 </body>
 </html>

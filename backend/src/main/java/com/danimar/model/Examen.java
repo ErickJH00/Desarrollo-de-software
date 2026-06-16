@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @NoArgsConstructor
 @Entity
@@ -24,4 +26,8 @@ public class Examen {
 
     @Column(name = "codigo_exa", unique = true, length = 30)
     private String codigo;
+
+    // Costo (precio) del examen. Se usa para calcular el costo total de una orden.
+    @Column(name = "costo_exa", precision = 10, scale = 2)
+    private BigDecimal costo = BigDecimal.ZERO;
 }

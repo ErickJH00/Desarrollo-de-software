@@ -1,0 +1,14 @@
+# ============================================================
+# Render Blueprint para desplegar Danimar.
+# En Render: New + → "Blueprint" → conecta este repositorio.
+# Render detecta este render.yaml y crea el servicio automáticamente.
+# ============================================================
+services:
+  - type: web
+    name: danimar
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    autoDeploy: true

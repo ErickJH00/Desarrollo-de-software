@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de resultados · Laboratorio Danimar</title>
+  <link rel="stylesheet" href="../assets/catalogo.css">
+  <style>
+    .hoja{max-width:850px;margin:20px auto;background:#fff;border:1px solid var(--linea);
+      border-radius:10px;padding:28px 34px;}
+    .enc{text-align:center;border-bottom:2px solid var(--azul);padding-bottom:10px;margin-bottom:16px;}
+    .enc h1{margin:0;color:var(--azul);font-size:22px;}
+    .enc p{margin:2px 0;color:var(--gris);font-size:13px;}
+    .datos{display:flex;flex-wrap:wrap;gap:6px 30px;margin-bottom:18px;font-size:14px;}
+    .datos b{color:var(--azul);}
+    h3.exam{color:var(--azul);font-size:15px;margin:18px 0 6px;border-bottom:1px solid var(--linea);padding-bottom:4px;}
+    table{width:100%;border-collapse:collapse;}
+    th{text-align:left;font-size:12px;color:var(--gris);border-bottom:1px solid var(--linea);padding:4px 6px;}
+    td{padding:5px 6px;border-bottom:1px solid #f0f4f8;font-size:14px;}
+    .costo{margin-top:22px;text-align:right;font-size:16px;color:var(--azul);font-weight:700;}
+    .acciones{max-width:850px;margin:0 auto 30px;display:flex;gap:12px;justify-content:flex-end;}
+    .btn{background:var(--azul);color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;}
+    .firma{margin-top:40px;text-align:center;color:var(--gris);font-size:13px;}
+    .firma .linea{width:220px;border-top:1px solid #999;margin:0 auto 4px;}
+    @media print{ .topbar,.acciones{display:none;} .hoja{border:none;} body{background:#fff;} }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">🧪 Laboratorio Clínico <strong>Danimar</strong></div>
+    <span class="subtitulo">Reporte de resultados</span>
+  </header>
+
+  <div class="acciones">
+    <button class="btn" onclick="window.print()">Imprimir</button>
+  </div>
+
+  <div class="hoja" id="hoja">Cargando…</div>
+
+  <script src="../assets/reporte.js"></script>
+</body>
+</html>

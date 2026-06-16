@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Exámenes · Laboratorio Danimar</title>
+  <link rel="stylesheet" href="../assets/catalogo.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">🧪 Laboratorio Clínico <strong>Danimar</strong></div>
+    <span class="subtitulo">Catálogo de exámenes</span>
+  </header>
+
+  <main class="layout">
+    <!-- Categorías -->
+    <section class="panel">
+      <h2>Categorías</h2>
+      <ul id="lista-categorias" class="lista"></ul>
+    </section>
+
+    <!-- Exámenes -->
+    <section class="panel">
+      <h2 id="titulo-examenes">Exámenes</h2>
+      <ul id="lista-examenes" class="lista"></ul>
+    </section>
+
+    <!-- Campos del examen -->
+    <section class="panel panel-ancho">
+      <h2 id="titulo-campos">Parámetros</h2>
+      <table class="tabla">
+        <thead>
+          <tr><th>Parámetro</th><th>Unidad</th><th>Valor de referencia</th></tr>
+        </thead>
+        <tbody id="tabla-campos">
+          <tr><td colspan="3" class="vacio">Selecciona un examen para ver sus parámetros.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../assets/catalogo.js"></script>
+</body>
+</html>

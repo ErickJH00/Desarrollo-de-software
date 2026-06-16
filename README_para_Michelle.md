@@ -1,8 +1,4 @@
-# Danimar 2 — Adaptación para la materia "Desarrollo de Software"
 
-Esta carpeta contiene el contenido de Danimar adaptado al **repositorio de Spring Boot**
-de tu equipo (https://github.com/ErickJH00/Desarrollo-de-software), respetando su modelo
-y nomenclatura (`tmcategorias`, `tmexamenes`, `tmcampos`, etc.).
 
 ## Qué hay aquí
 
